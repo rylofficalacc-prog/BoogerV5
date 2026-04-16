@@ -47,7 +47,6 @@ loom {
 
 repositories {
     maven("https://maven.fabricmc.net/")
-    maven("https://api.modrinth.com/maven") // Sodium
     mavenCentral()
 }
 
@@ -67,8 +66,8 @@ dependencies {
     implementation("org.jetbrains.kotlinx:kotlinx-serialization-json:$kotlinxSerializationVersion")
     implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core:$kotlinxCoroutinesVersion")
 
-    // Sodium — mandatory, bundled performance layer
-    modImplementation("maven.modrinth:sodium:${property("sodium_version")}")
+    // Sodium — optional at compile time (add sodium jar to mods/ at runtime)
+    // modImplementation("maven.modrinth:sodium:${property("sodium_version")}")
 
     // Config serialization
     implementation("com.google.code.gson:gson:2.11.0")
