@@ -13,10 +13,8 @@
     "MixinKeyboard",
     "MixinClientConnection",
     "MixinWorldRenderer",
-    "MixinTitleScreen",
-    "sodium.MixinRenderSectionManager"
+    "MixinTitleScreen"
   ],
-  "client": [],
   "injectors": {
     "defaultRequire": 1
   }
