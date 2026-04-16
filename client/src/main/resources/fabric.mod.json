@@ -1,0 +1,35 @@
+{
+  "schemaVersion": 1,
+  "id": "booger",
+  "version": "${version}",
+  "name": "Booger Client",
+  "description": "High-performance competitive Minecraft client for 1.21.x",
+  "authors": ["Booger Dev"],
+  "contact": {
+    "homepage": "https://boogerclient.dev",
+    "sources": "https://github.com/booger/booger-client"
+  },
+  "license": "LGPL-3.0",
+  "icon": "assets/booger/textures/icon.png",
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "dev.booger.client.BoogerClient"
+    ],
+    "fabric-datagen": []
+  },
+  "mixins": [
+    "mixins.booger.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.16.9",
+    "fabric-api": "*",
+    "fabric-language-kotlin": ">=1.12.3",
+    "minecraft": "~1.21.4",
+    "java": ">=21",
+    "sodium": ">=0.6.0"
+  },
+  "suggests": {
+    "iris": "*"
+  }
+}

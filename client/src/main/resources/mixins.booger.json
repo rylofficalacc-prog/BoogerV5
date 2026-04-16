@@ -1,0 +1,23 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "dev.booger.client.mixin",
+  "compatibilityLevel": "JAVA_21",
+  "mixins": [
+    "MixinGameRenderer",
+    "MixinMinecraftClient",
+    "MixinClientPlayerEntity",
+    "MixinClientPlayerEntityCoords",
+    "MixinInGameHud",
+    "MixinMouseHandler",
+    "MixinKeyboard",
+    "MixinClientConnection",
+    "MixinWorldRenderer",
+    "MixinTitleScreen",
+    "sodium.MixinRenderSectionManager"
+  ],
+  "client": [],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}
